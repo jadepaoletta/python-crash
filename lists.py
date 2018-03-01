@@ -34,3 +34,20 @@ def one_million():
     print max(million)
 
     return million
+
+def print_odd():
+    """prints odd numbers from 1 to 20"""
+
+    one_to_twenty = []
+
+    for count in range(1, 21):
+        one_to_twenty.append(count)
+
+    print one_to_twenty
+
+    for i in range(1, (len(one_to_twenty)+1), 2):
+        print i
+
+
+
+
