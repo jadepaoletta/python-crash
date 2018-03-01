@@ -38,16 +38,23 @@ def one_million():
 def print_odd():
     """prints odd numbers from 1 to 20"""
 
-    one_to_twenty = []
+    one_to_twenty = [count for count in range(1, 21)]
 
-    for count in range(1, 21):
-        one_to_twenty.append(count)
+    #for count in range(1, 21):
+       # one_to_twenty.append(count)
 
     print one_to_twenty
 
     for i in range(1, (len(one_to_twenty)+1), 2):
         print i
 
+def threes():
+    """makes a list of the multiples of 3 from 3 to 30"""
+
+    three_to_thirty = [count for count in range(3, 31, 3)]
+
+    for i in three_to_thirty:
+        print i
 
 
 
