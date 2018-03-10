@@ -1,10 +1,10 @@
 
 class Restaurant():
 
-    def __init__(self, name, cuisine, served=0):
+    def __init__(self, name, cuisine):
         self.name = name
         self.cuisine = cuisine
-        self.served = served
+        self.served = 0
 
     def describe_restaurant(self):
         """Returns a short description of the restaruant"""
