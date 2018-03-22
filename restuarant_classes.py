@@ -1,5 +1,5 @@
 
-class Restaurant():
+class Restaurant(object):
 
     def __init__(self, name, cuisine):
         self.name = name
@@ -24,6 +24,16 @@ class Restaurant():
         """increments the number served value"""
 
         self.served += num_served
+
+
+class IceCreamStand(Restaurant):
+
+    def __init__(self, name, cuisine, flavors):
+        super(IceCreamStand, self).__init__(name, cuisine)
+        self.flavors = flavors
+
+    def get_flavors(self):
+        return self.flavors
 
 
 

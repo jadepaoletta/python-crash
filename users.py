@@ -18,7 +18,7 @@ class User(object):
         print "Hello {} {}, it's so nice to meet you!".format(self.first_name, self.last_name)
 
 
-    def login_attempts(self):
+    def get_login_attempts(self):
         """Returns the number of login attempts for the user"""
         return self.login_attempts
 
@@ -32,5 +32,17 @@ class User(object):
         """Resets the value of login attempts to 0"""
         self.login_attempts = 0
 
-        
+
+class Admin(User):
+    priveleges = ["Can delete users", "Can add post", "Can add post"]
+    
+    def __init__(self, first_name, last_name, email, summary):
+        super(Admin, self).__init__(first_name, last_name, email, summary)
+
+
+    def show_priveleges(self):
+        """prints a list of admin priveleges"""
+        for privelege in self.priveleges:
+            print privelege
+
 
